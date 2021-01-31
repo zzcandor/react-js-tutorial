@@ -13,6 +13,9 @@ const reducer = (state, action) => {
   }
 };
 
+// useReducer 是 useState 的代替方案，用于state复杂变化
+// useReducer 是个单个组件状态管理，组件通讯还需要pros
+// redux 是全局的状态管理，多组件共享数据
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
