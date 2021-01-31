@@ -3,6 +3,7 @@ import "./style.css";
 import StateFunction from "./components/StateFunction";
 import UseRef from "./components/UseRef";
 import UseContextDemo from "./components/UseContextDemo";
+import UseReducerDemo from "./components/UseReducerDemo";
 
 export default function App() {
   return (
@@ -12,6 +13,8 @@ export default function App() {
       <UseRef />
       <hr />
       <UseContextDemo />
+      <hr />
+      <UseReducerDemo />
     </div>
   );
 }
