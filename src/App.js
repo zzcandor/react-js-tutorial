@@ -5,6 +5,7 @@ import UseRef from "./components/UseRef";
 import UseContextDemo from "./components/UseContextDemo";
 import UseReducerDemo from "./components/UseReducerDemo";
 import UseMemoDemo from "./components/UseMemoDemo";
+import CustomHookUsage from "./components/CustomHookUsage";
 
 export default function App() {
   return (
@@ -18,6 +19,8 @@ export default function App() {
       <UseReducerDemo />
       <hr />
       <UseMemoDemo />
+      <hr />
+      <CustomHookUsage />
     </div>
   );
 }
