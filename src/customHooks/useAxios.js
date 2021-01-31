@@ -1,5 +1,5 @@
 import axios from "axios";
-
+import { useState, useEffect } from "react";
 // 封装 axios 发送网络请求的自定义 Hook
 function useAxios(url) {
   const [loading, setLoading] = useState(false);
@@ -12,10 +12,9 @@ function useAxios(url) {
       .get(url)
       .then(res => setData(res))
       .catch(err => setError(err))
-      .finally(() => {
-        setLoading(false);
-      });
+      .finally(() =>  setLoading(false));
   }, [url]);
 
   return [loading, data, error];
 }
+export default useAxios;
